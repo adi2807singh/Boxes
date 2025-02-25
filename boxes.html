@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Boxes</title>
+    <link rel="stylesheet" href="boxes.css">
+</head>
+<body>
+
+    <div class="box-container">
+        <h2 class="hr-lines">YAY! It's BOGO</h2>
+
+        <div class="box-option" onclick="toggleExpand(this)">
+            <input type="radio" name="box" id="box1">
+            <label for="box1">
+                <span class="box-title">1 Pair</span>
+                <span class="price">Rs 195.00</span>
+                <span class="discount">50% OFF</span>
+            </label>
+            <div class="box-content"></div>
+        </div>
+        
+        <div class="box-option popular" onclick="toggleExpand(this)">
+            <input type="radio" name="box" id="box2">
+            <label for="box2">
+                <span class="box-title">2 Pair</span>
+                <span class="price">Rs 345.00</span>
+                <span class="discount">40% OFF</span>
+                <span class="most-popular">Most Popular</span>
+            </label>
+            <div class="box-content">
+                <label>Size #1: 
+                    <select>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                    </select>
+                </label>
+                <label>Colour #1: 
+                    <select>
+                        <option>Red</option>
+                        <option>Blue</option>
+                        <option>Black</option>
+                    </select>
+                </label>
+                <label>Size #2: 
+                    <select>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                    </select>
+                </label>
+                <label>Colour #2: 
+                    <select>
+                        <option>Red</option>
+                        <option>Blue</option>
+                        <option>Black</option>
+                    </select>
+                </label>
+            </div>
+        </div>
+
+        
+        <div class="box-option" onclick="toggleExpand(this)">
+            <input type="radio" name="box" id="box3">
+            <label for="box3">
+                <span class="box-title">3 Pair</span>
+                <span class="price">Rs 528.00</span>
+                <span class="discount">60% OFF</span>
+            </label>
+            <div class="box-content">
+                <label>Size #1: 
+                    <select>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                    </select>
+                </label>
+                <label>Colour #1: 
+                    <select>
+                        <option>Red</option>
+                        <option>Blue</option>
+                        <option>Black</option>
+                    </select>
+                </label>
+                <label>Size #2: 
+                    <select>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                    </select>
+                </label>
+                <label>Colour #2: 
+                    <select>
+                        <option>Red</option>
+                        <option>Blue</option>
+                        <option>Black</option>
+                    </select>
+                </label>
+                <label>Size #3: 
+                    <select>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                    </select>
+                </label>
+                <label>Colour #3: 
+                    <select>
+                        <option>Red</option>
+                        <option>Blue</option>
+                        <option>Black</option>
+                    </select>
+                </label>
+            </div>
+        </div>
+
+        <p class="shipping">Free 2 Day Shipping</p>
+        <p class="total">Total: <span id="total-price">Rs 360.00</span></p>
+
+        <button class="add-to-cart">+ Add to Cart</button>
+
+        <p class="powered-by">© Powered by Pumper</p>
+    </div>
+
+    <script src="boxes.js"></script>
+</body>
+</html>
